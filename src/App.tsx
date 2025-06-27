@@ -19,6 +19,13 @@ function App() {
           <Route path="releases" element={<SongReleases />} />
           <Route path="contact" element={<Contact />} />
         </Route>
+        <Route path="/admin" element={<AdminLayout />}>
+          <Route index element={<AdminDashboard />} />
+          <Route path="services" element={<AdminServices />} />
+          <Route path="portfolio" element={<AdminPortfolio />} />
+          <Route path="releases" element={<AdminReleases />} />
+          <Route path="contact" element={<AdminContact />} />
+        </Route>
       </Routes>
     </Router>
   );
